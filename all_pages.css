@@ -1,0 +1,93 @@
+/* All Pages Section Styles */
+.all-pages-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.all-pages-section h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Pages Grid */
+.pages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Page Category Card */
+.page-category {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.page-category h2 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #27ae60;
+}
+
+.page-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-category ul li {
+    margin-bottom: 10px;
+}
+
+.page-category ul li a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-category ul li a:hover {
+    background-color: #27ae60;
+    color: #fff;
+    padding-left: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .all-pages-section h1 {
+        font-size: 2rem;
+    }
+    
+    .pages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .page-category {
+        padding: 20px;
+    }
+}
