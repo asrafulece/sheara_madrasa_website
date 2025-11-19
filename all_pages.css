@@ -1,63 +1,71 @@
-/* All Pages Section Styles */
-.all-pages-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+/* All Pages Specific Styles */
+
+/* Main Content */
+main {
+    min-height: calc(100vh - 200px);
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
 }
 
-.all-pages-section h1 {
+.all-pages-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#site-navigation-heading {
     text-align: center;
     color: #2c3e50;
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .intro-text {
     text-align: center;
     color: #7f8c8d;
     font-size: 1.1rem;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 /* Pages Grid */
 .pages-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-/* Page Category Card */
 .page-category {
-    background: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
     border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .page-category h2 {
-    color: #27ae60;
+    color: #2c3e50;
     font-size: 1.5rem;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #27ae60;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
 }
 
 .page-category ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .page-category ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
 }
 
 .page-category ul li a {
@@ -65,29 +73,43 @@
     text-decoration: none;
     font-size: 1rem;
     display: block;
-    padding: 8px 10px;
+    padding: 0.5rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .page-category ul li a:hover {
-    background-color: #27ae60;
-    color: #fff;
-    padding-left: 15px;
+    background-color: #e8f4f8;
+    padding-left: 1rem;
+    color: #3498db;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .all-pages-section h1 {
+    #site-navigation-heading {
         font-size: 2rem;
     }
     
     .pages-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 1.5rem;
     }
     
-    .page-category {
-        padding: 20px;
+    .all-pages-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem 0.5rem;
+    }
+    
+    #site-navigation-heading {
+        font-size: 1.5rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
     }
 }

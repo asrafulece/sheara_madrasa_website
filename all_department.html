@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the academic departments at Sheara Madrasa - Quranic Studies, Hadith, Fiqh, Arabic Language, Islamic History and General Education">
-    <meta name="keywords" content="Islamic education, Madrasa departments, Quran studies, Hadith, Fiqh, Arabic language">
-    <meta name="author" content="Sheara Madrasa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
     <title>All Departments - Sheara Madrasa | Islamic Education Excellence</title>
+    <meta name="title" content="All Departments - Sheara Madrasa | Islamic Education Excellence">
+    <meta name="description" content="Explore the academic departments at Sheara Madrasa - Quranic Studies, Hadith, Fiqh, Arabic Language, Islamic History and General Education. Expert faculty, comprehensive curriculum, and modern facilities.">
+    <meta name="keywords" content="Islamic education, Madrasa departments, Quran studies, Hadith, Fiqh, Arabic language, Islamic jurisprudence, Quranic memorization, Hifz, Tajweed, Islamic history">
+    <meta name="author" content="Sheara Madrasa">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shearamadrasa.edu.bd/all_department.html">
+    <meta property="og:title" content="All Departments - Sheara Madrasa">
+    <meta property="og:description" content="Discover our 6 comprehensive Islamic education departments with 30+ expert teachers and 50+ courses.">
+    <meta property="og:image" content="images/sheara_madrasa_logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.shearamadrasa.edu.bd/all_department.html">
+    <meta property="twitter:title" content="All Departments - Sheara Madrasa">
+    <meta property="twitter:description" content="Discover our 6 comprehensive Islamic education departments with 30+ expert teachers and 50+ courses.">
+    <meta property="twitter:image" content="images/sheara_madrasa_logo.jpg">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
@@ -16,21 +35,29 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="images/sheara_madrasa_logo.jpg" as="image">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content" aria-label="Skip to main content">Skip to main content</a>
+    
     <!-- Header Start -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="left_part">
-            <a href="index.html">
-                <img src="images/sheara_madrasa_logo.jpg" alt="Sheara Madrasa Logo">
+            <a href="index.html" aria-label="Sheara Madrasa Home">
+                <img src="images/sheara_madrasa_logo.jpg" alt="Sheara Madrasa Logo" width="120" height="80" loading="eager">
             </a>
         </div>
-        <nav class="right_part">
+        <nav class="right_part" role="navigation" aria-label="Main Navigation">
             <div class="details">
                 <a href="index.html">Home</a>
                 <a href="about_us.html">About Us</a>
                 <a href="admission.html">Admission</a>
-                <a href="all_department.html" class="active">All Department</a>
+                <a href="all_department.html" class="active" aria-current="page">All Departments</a>
                 <a href="all_pages.html">All Pages</a>
                 <a href="events.html">Events</a>
                 <a href="students_profile.html">Students Profile</a>
@@ -41,179 +68,179 @@
     <!-- Header End -->
 
     <!-- Main Content Start -->
-    <main>
+    <main id="main-content" role="main">
         <!-- Hero Section -->
-        <section class="departments-hero">
-            <div class="hero-overlay"></div>
+        <section class="departments-hero" aria-labelledby="hero-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
             <div class="hero-content">
-                <h1>Our Academic Departments</h1>
+                <h1 id="hero-title">Our Academic Departments</h1>
                 <p>Comprehensive Islamic Education Programs Designed for Excellence</p>
             </div>
         </section>
 
         <!-- Departments Section -->
-        <section class="departments">
+        <section class="departments" aria-labelledby="departments-heading">
             <div class="section-header">
-                <h2>All Departments</h2>
+                <h2 id="departments-heading">All Departments</h2>
                 <p class="intro">Explore our various academic departments dedicated to Islamic education and academic excellence. Each department is staffed with qualified scholars and modern teaching facilities.</p>
             </div>
             
             <!-- Department Statistics -->
-            <div class="dept-stats">
+            <div class="dept-stats" role="region" aria-label="Department Statistics">
                 <div class="stat-item">
-                    <div class="stat-icon">📚</div>
-                    <h3>6</h3>
+                    <div class="stat-icon" aria-hidden="true">📚</div>
+                    <h3><span class="stat-number" data-count="6">6</span></h3>
                     <p>Departments</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">👨‍🏫</div>
-                    <h3>30+</h3>
+                    <div class="stat-icon" aria-hidden="true">👨‍🏫</div>
+                    <h3><span class="stat-number" data-count="30">30+</span></h3>
                     <p>Expert Teachers</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">📖</div>
-                    <h3>50+</h3>
+                    <div class="stat-icon" aria-hidden="true">📖</div>
+                    <h3><span class="stat-number" data-count="50">50+</span></h3>
                     <p>Courses</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">🎓</div>
-                    <h3>500+</h3>
+                    <div class="stat-icon" aria-hidden="true">🎓</div>
+                    <h3><span class="stat-number" data-count="500">500+</span></h3>
                     <p>Students</p>
                 </div>
             </div>
 
-            <div class="department-grid">
+            <div class="department-grid" role="list">
                 <!-- Department 1: Quranic Studies -->
-                <article class="department-card">
-                    <div class="dept-icon">📖</div>
-                    <h3>Quranic Studies</h3>
-                    <p class="dept-description">Learn Quran recitation, memorization (Hifz), and Tajweed with qualified instructors. Our comprehensive program ensures proper understanding and application of Quranic teachings.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">📖</div>
+                    <h3 itemprop="name">Quranic Studies</h3>
+                    <p class="dept-description" itemprop="description">Learn Quran recitation, memorization (Hifz), and Tajweed with qualified instructors. Our comprehensive program ensures proper understanding and application of Quranic teachings.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Quran Memorization (Hifz)</li>
-                        <li>Tajweed Classes</li>
-                        <li>Tafsir Studies</li>
-                        <li>Quranic Arabic</li>
+                    <ul role="list" aria-label="Quranic Studies Programs">
+                        <li role="listitem">Quran Memorization (Hifz)</li>
+                        <li role="listitem">Tajweed Classes</li>
+                        <li role="listitem">Tafsir Studies</li>
+                        <li role="listitem">Quranic Arabic</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 150+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="150 plus students enrolled"><span aria-hidden="true">👥</span> 150+ Students</span>
+                        <a href="quranic-studies.html" class="dept-btn" aria-label="Learn more about Quranic Studies department">Learn More</a>
                     </div>
                 </article>
 
                 <!-- Department 2: Hadith Studies -->
-                <article class="department-card">
-                    <div class="dept-icon">📜</div>
-                    <h3>Hadith Studies</h3>
-                    <p class="dept-description">In-depth study of Hadith literature and Islamic traditions. Students learn authentication methods, interpretation, and application of prophetic traditions.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">📜</div>
+                    <h3 itemprop="name">Hadith Studies</h3>
+                    <p class="dept-description" itemprop="description">In-depth study of Hadith literature and Islamic traditions. Students learn authentication methods, interpretation, and application of prophetic traditions.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Sahih Bukhari</li>
-                        <li>Sahih Muslim</li>
-                        <li>Hadith Analysis & Authentication</li>
-                        <li>Science of Hadith (Mustalah)</li>
+                    <ul role="list" aria-label="Hadith Studies Programs">
+                        <li role="listitem">Sahih Bukhari</li>
+                        <li role="listitem">Sahih Muslim</li>
+                        <li role="listitem">Hadith Analysis & Authentication</li>
+                        <li role="listitem">Science of Hadith (Mustalah)</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 80+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="80 plus students enrolled"><span aria-hidden="true">👥</span> 80+ Students</span>
+                        <a href="hadith-studies.html" class="dept-btn" aria-label="Learn more about Hadith Studies department">Learn More</a>
                     </div>
                 </article>
 
                 <!-- Department 3: Fiqh & Islamic Jurisprudence -->
-                <article class="department-card">
-                    <div class="dept-icon">⚖️</div>
-                    <h3>Fiqh & Islamic Jurisprudence</h3>
-                    <p class="dept-description">Comprehensive understanding of Islamic law and jurisprudence. Study various schools of thought and contemporary Islamic legal issues.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">⚖️</div>
+                    <h3 itemprop="name">Fiqh & Islamic Jurisprudence</h3>
+                    <p class="dept-description" itemprop="description">Comprehensive understanding of Islamic law and jurisprudence. Study various schools of thought and contemporary Islamic legal issues.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Hanafi Fiqh</li>
-                        <li>Comparative Fiqh</li>
-                        <li>Usul al-Fiqh (Principles)</li>
-                        <li>Contemporary Issues</li>
+                    <ul role="list" aria-label="Fiqh Programs">
+                        <li role="listitem">Hanafi Fiqh</li>
+                        <li role="listitem">Comparative Fiqh</li>
+                        <li role="listitem">Usul al-Fiqh (Principles)</li>
+                        <li role="listitem">Contemporary Issues</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 70+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="70 plus students enrolled"><span aria-hidden="true">👥</span> 70+ Students</span>
+                        <a href="fiqh-jurisprudence.html" class="dept-btn" aria-label="Learn more about Fiqh and Islamic Jurisprudence department">Learn More</a>
                     </div>
                 </article>
 
                 <!-- Department 4: Arabic Language -->
-                <article class="department-card">
-                    <div class="dept-icon">🔤</div>
-                    <h3>Arabic Language</h3>
-                    <p class="dept-description">Master classical and modern Arabic language skills. From basic grammar to advanced literature, develop proficiency in the language of the Quran.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">🔤</div>
+                    <h3 itemprop="name">Arabic Language</h3>
+                    <p class="dept-description" itemprop="description">Master classical and modern Arabic language skills. From basic grammar to advanced literature, develop proficiency in the language of the Quran.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Arabic Grammar (Nahw)</li>
-                        <li>Arabic Morphology (Sarf)</li>
-                        <li>Arabic Literature</li>
-                        <li>Conversational Arabic</li>
+                    <ul role="list" aria-label="Arabic Language Programs">
+                        <li role="listitem">Arabic Grammar (Nahw)</li>
+                        <li role="listitem">Arabic Morphology (Sarf)</li>
+                        <li role="listitem">Arabic Literature</li>
+                        <li role="listitem">Conversational Arabic</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 120+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="120 plus students enrolled"><span aria-hidden="true">👥</span> 120+ Students</span>
+                        <a href="arabic-language.html" class="dept-btn" aria-label="Learn more about Arabic Language department">Learn More</a>
                     </div>
                 </article>
 
                 <!-- Department 5: Islamic History -->
-                <article class="department-card">
-                    <div class="dept-icon">🕌</div>
-                    <h3>Islamic History</h3>
-                    <p class="dept-description">Study the rich history of Islam and Muslim civilizations. Learn from the past to build a better understanding of Islamic heritage and culture.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">🕌</div>
+                    <h3 itemprop="name">Islamic History</h3>
+                    <p class="dept-description" itemprop="description">Study the rich history of Islam and Muslim civilizations. Learn from the past to build a better understanding of Islamic heritage and culture.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Sirah (Life of Prophet Muhammad)</li>
-                        <li>Islamic Civilization</li>
-                        <li>History of Caliphates</li>
-                        <li>Muslim Scholars & Scientists</li>
+                    <ul role="list" aria-label="Islamic History Programs">
+                        <li role="listitem">Sirah (Life of Prophet Muhammad)</li>
+                        <li role="listitem">Islamic Civilization</li>
+                        <li role="listitem">History of Caliphates</li>
+                        <li role="listitem">Muslim Scholars & Scientists</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 60+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="60 plus students enrolled"><span aria-hidden="true">👥</span> 60+ Students</span>
+                        <a href="islamic-history.html" class="dept-btn" aria-label="Learn more about Islamic History department">Learn More</a>
                     </div>
                 </article>
 
                 <!-- Department 6: General Education -->
-                <article class="department-card">
-                    <div class="dept-icon">🎓</div>
-                    <h3>General Education</h3>
-                    <p class="dept-description">Modern academic subjects alongside Islamic studies. Balanced education preparing students for both religious knowledge and worldly success.</p>
+                <article class="department-card" role="listitem" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <div class="dept-icon" aria-hidden="true">🎓</div>
+                    <h3 itemprop="name">General Education</h3>
+                    <p class="dept-description" itemprop="description">Modern academic subjects alongside Islamic studies. Balanced education preparing students for both religious knowledge and worldly success.</p>
                     <h4>Key Programs:</h4>
-                    <ul>
-                        <li>Mathematics</li>
-                        <li>Science (Physics, Chemistry, Biology)</li>
-                        <li>English Language & Literature</li>
-                        <li>Computer Studies</li>
+                    <ul role="list" aria-label="General Education Programs">
+                        <li role="listitem">Mathematics</li>
+                        <li role="listitem">Science (Physics, Chemistry, Biology)</li>
+                        <li role="listitem">English Language & Literature</li>
+                        <li role="listitem">Computer Studies</li>
                     </ul>
                     <div class="dept-footer">
-                        <span class="dept-students">👥 100+ Students</span>
-                        <a href="#" class="dept-btn">Learn More</a>
+                        <span class="dept-students" aria-label="100 plus students enrolled"><span aria-hidden="true">👥</span> 100+ Students</span>
+                        <a href="general-education.html" class="dept-btn" aria-label="Learn more about General Education department">Learn More</a>
                     </div>
                 </article>
             </div>
         </section>
 
         <!-- Why Choose Our Departments Section -->
-        <section class="why-choose">
-            <h2>Why Choose Our Departments?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍🏫</div>
+        <section class="why-choose" aria-labelledby="why-choose-heading">
+            <h2 id="why-choose-heading">Why Choose Our Departments?</h2>
+            <div class="features-grid" role="list">
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">👨‍🏫</div>
                     <h3>Expert Faculty</h3>
                     <p>Learn from qualified scholars with years of teaching experience and authentic knowledge.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">📚</div>
                     <h3>Comprehensive Curriculum</h3>
                     <p>Well-structured courses covering both traditional and contemporary Islamic education.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏛️</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">🏛️</div>
                     <h3>Modern Facilities</h3>
                     <p>State-of-the-art classrooms, library, and learning resources for effective education.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">🤝</div>
                     <h3>Individual Attention</h3>
                     <p>Small class sizes ensuring personalized guidance and mentorship for each student.</p>
                 </div>
@@ -221,13 +248,13 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="cta-section">
+        <section class="cta-section" aria-labelledby="cta-heading">
             <div class="cta-content">
-                <h2>Ready to Start Your Islamic Education Journey?</h2>
+                <h2 id="cta-heading">Ready to Start Your Islamic Education Journey?</h2>
                 <p>Join thousands of students who have benefited from our comprehensive Islamic education programs.</p>
                 <div class="cta-buttons">
-                    <a href="admission.html" class="cta-btn primary">Apply for Admission</a>
-                    <a href="contact_us.html" class="cta-btn secondary">Contact Us</a>
+                    <a href="admission.html" class="cta-btn primary" aria-label="Apply for admission to Sheara Madrasa">Apply for Admission</a>
+                    <a href="contact_us.html" class="cta-btn secondary" aria-label="Contact Sheara Madrasa for more information">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -235,42 +262,78 @@
     <!-- Main Content End -->
 
     <!-- Footer Start -->
-    <footer>
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/EducationalOrganization">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>About Sheara Madrasa</h3>
-                <p>Dedicated to providing quality Islamic education and nurturing future scholars with strong moral values and academic excellence since 1995.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                    <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                    <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+                <p itemprop="description">Dedicated to providing quality Islamic education and nurturing future scholars with strong moral values and academic excellence since 1995.</p>
+                <div class="social-links" role="list" aria-label="Social Media Links">
+                    <a href="https://facebook.com/shearamadrasa" class="social-icon" aria-label="Visit our Facebook page" role="listitem" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">📘</span></a>
+                    <a href="https://twitter.com/shearamadrasa" class="social-icon" aria-label="Follow us on Twitter" role="listitem" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🐦</span></a>
+                    <a href="https://instagram.com/shearamadrasa" class="social-icon" aria-label="Follow us on Instagram" role="listitem" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">📷</span></a>
+                    <a href="https://youtube.com/shearamadrasa" class="social-icon" aria-label="Subscribe to our YouTube channel" role="listitem" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶️</span></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="admission.html">Admission</a></li>
-                    <li><a href="all_department.html">Departments</a></li>
-                    <li><a href="students_profile.html">Students</a></li>
-                    <li><a href="events.html">Events</a></li>
-                </ul>
+                <nav aria-label="Footer Navigation">
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="about_us.html">About Us</a></li>
+                        <li role="listitem"><a href="admission.html">Admission</a></li>
+                        <li role="listitem"><a href="all_department.html">Departments</a></li>
+                        <li role="listitem"><a href="students_profile.html">Students</a></li>
+                        <li role="listitem"><a href="events.html">Events</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="footer-section">
                 <h3>Contact Info</h3>
-                <p>📍 Sheara, Cumilla, Bangladesh</p>
-                <p>📞 +880-1234-567890</p>
-                <p>✉️ info@shearamadrasa.edu.bd</p>
-                <p>🕐 Sat - Thu: 8:00 AM - 5:00 PM</p>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <p><span aria-hidden="true">📍</span> <span itemprop="streetAddress">Sheara</span>, <span itemprop="addressLocality">Cumilla</span>, <span itemprop="addressCountry">Bangladesh</span></p>
+                </address>
+                <p itemprop="telephone"><span aria-hidden="true">📞</span> <a href="tel:+8801234567890">+880-1234-567890</a></p>
+                <p itemprop="email"><span aria-hidden="true">✉️</span> <a href="mailto:info@shearamadrasa.edu.bd">info@shearamadrasa.edu.bd</a></p>
+                <p><span aria-hidden="true">🕐</span> <time>Sat - Thu: 8:00 AM - 5:00 PM</time></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Sheara Madrasa. All rights reserved. | Designed with ❤️ for Islamic Education</p>
+            <p>&copy; <time datetime="2024">2024</time> <span itemprop="name">Sheara Madrasa</span>. All rights reserved. | Designed with <span aria-label="love">❤️</span> for Islamic Education</p>
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Sheara Madrasa",
+        "description": "Islamic education institution offering comprehensive programs in Quranic Studies, Hadith, Fiqh, Arabic Language, Islamic History, and General Education",
+        "url": "https://www.shearamadrasa.edu.bd",
+        "logo": "https://www.shearamadrasa.edu.bd/images/sheara_madrasa_logo.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sheara",
+            "addressLocality": "Cumilla",
+            "addressCountry": "Bangladesh"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+880-1234-567890",
+            "email": "info@shearamadrasa.edu.bd",
+            "contactType": "Admissions"
+        },
+        "foundingDate": "1995",
+        "numberOfEmployees": 30,
+        "sameAs": [
+            "https://facebook.com/shearamadrasa",
+            "https://twitter.com/shearamadrasa",
+            "https://instagram.com/shearamadrasa",
+            "https://youtube.com/shearamadrasa"
+        ]
+    }
+    </script>
 
 </body>
 </html>
