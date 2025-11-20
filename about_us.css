@@ -6,17 +6,33 @@
     box-sizing: border-box;
 }
 
+/* Design tokens: centralized color palette for easy adjustments */
+:root {
+    --bg: #f5f7fb;             /* page background */
+    --text: #2c3e50;           /* primary body text */
+    --muted: #4a5568;          /* secondary body text */
+    --muted-2: #6b7280;        /* labels / small text */
+    --primary: #0b3d91;        /* primary brand color (navy) */
+    --primary-2: #6a5acd;      /* secondary brand (indigo) */
+    --accent: #2aa198;         /* accent / teal */
+    --card-bg: #ffffff;        /* card background */
+    --shadow-color: rgba(2, 6, 23, 0.06);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    /* Dark slate text for better contrast */
+    color: var(--text);
+    /* Soft neutral background for modern, professional look */
+    background-color: var(--bg);
 }
 
 /* Header Section */
 .about-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    /* Primary gradient: deep navy -> indigo */
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+    color: var(--card-bg);
     text-align: center;
     padding: 80px 20px;
 }
@@ -40,121 +56,123 @@ body {
     padding: 40px 20px;
 }
 
-/* About Content Section */
-.about-content {
+/* Layout helpers for About page */
+.about-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 60px;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    align-items: start;
 }
 
-.about-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #667eea;
+.col-6 {
+    grid-column: span 6;
 }
 
-.about-text p {
-    margin-bottom: 15px;
-    text-align: justify;
+.col-12 {
+    grid-column: span 12;
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* --- Visual polish & interactive states for About page --- */
+.about-header h1 {
+    letter-spacing: 1px;
+    text-shadow: 0 2px 12px rgba(11,61,145,0.12);
 }
 
-/* Mission & Vision Section */
-.mission-vision {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 60px;
+.about-header .subtitle,
+.about-header p {
+    font-size: 1.05rem;
+    max-width: 880px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.95);
+    opacity: 0.95;
 }
 
-.mission, .vision {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.about-header .subtitle::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 18px auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--primary-2));
 }
 
-.mission h3, .vision h3 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #667eea;
+.about-intro h2 {
+    font-weight: 700;
+    letter-spacing: 0.2px;
 }
 
-.mission p, .vision p {
-    text-align: justify;
+.about-intro p {
+    margin-top: 12px;
+    color: var(--muted);
 }
 
-/* Values Section */
-.values {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
+.mission-box, .vision-box {
+    transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
-.values h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #667eea;
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.mission-box:hover, .vision-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(11,61,145,0.08);
 }
 
 .value-item {
-    text-align: center;
-    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,251,255,1));
+    border: 1px solid rgba(11,61,145,0.04);
+    border-radius: 12px;
+    transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-.value-item i {
-    font-size: 3em;
-    color: #764ba2;
-    margin-bottom: 15px;
+.value-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(11,61,145,0.06);
 }
 
-.value-item h4 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
+.history-section {
+    margin-top: 30px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-header h1 {
-        font-size: 2em;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-
-    .mission-vision {
-        grid-template-columns: 1fr;
-    }
-
-    .about-text h2 {
-        font-size: 2em;
-    }
-
-    .values h2 {
-        font-size: 2em;
-    }
+.history-section h2, .facilities-section h2 {
+    color: var(--primary);
 }
 
+.history-section p {
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+.facilities-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px 18px;
+}
+
+.facilities-section li {
+    position: relative;
+    padding-left: 26px;
+    color: var(--muted);
+}
+
+.facilities-section li::before {
+    content: '\2713'; /* check mark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Small polish for links in the about page */
+.about-section a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(11,61,145,0.12);
+}
+
+.about-section a:hover {
+    color: var(--primary-2);
+    border-bottom-style: solid;
+}
