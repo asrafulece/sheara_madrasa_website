@@ -81,39 +81,160 @@
 
 }
 
-.banner {
-    width: 100%;
-    height: calc(100vh - 100px);
-    margin-top: 100px;
-    background: url(images/banner.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%);
-        z-index: 1;
+    /* Banner / Hero styles */
+    .banner {
+        position: relative;
+        margin-top: 116px; /* leave space for fixed header */
+        overflow: hidden;
     }
 
-    img{
+    /* Full-bleed image */
+    .banner img {
         width: 100%;
-        height: 100%;
+        height: 520px;
         object-fit: cover;
-        transition: transform 0.5s ease;
+        display: block;
+        -webkit-user-drag: none;
+        user-select: none;
+        filter: brightness(0.6); /* darken so overlay text is readable */
+        transition: transform 0.6s ease;
     }
 
-    &:hover img{
-        transform: scale(1.05);
+    /* gentle parallax-ish zoom on hover (optional) */
+    .banner:hover img {
+        transform: scale(1.03);
     }
-}
+
+    /* overlay container that holds text and buttons */
+    .banner-text {
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        bottom: 40px;
+        pointer-events: none; /* allow clicking through to image except on buttons */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    /* inner box - reuse .container width but style the content card */
+    .banner-text .container {
+        pointer-events: auto;
+        max-width: 920px;
+        background: linear-gradient(135deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.18) 100%);
+        padding: 28px 30px;
+        border-radius: 12px;
+        color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        backdrop-filter: blur(6px);
+    }
+
+    /* Headline and description */
+    .banner-title {
+        margin: 0 0 8px 0;
+        font-size: 30px;
+        line-height: 1.15;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        color: #ffffff;
+        text-shadow: 0 4px 18px rgba(0,0,0,0.45);
+    }
+
+    .banner-description {
+        margin: 0 0 18px 0;
+        font-size: 15px;
+        color: rgba(255,255,255,0.95);
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    /* Buttons (HTML uses div.button1 / div.button2 with <p> inside) */
+    .button1,
+    .button2 {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 28px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1;
+        transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+        user-select: none;
+        margin-right: 12px;
+        text-align: center;
+    }
+
+    /* Primary CTA */
+    .button1 {
+        background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(46,204,113,0.18);
+    }
+
+    /* Secondary CTA */
+    .button2 {
+        background: transparent;
+        color: #ffffff;
+        border: 2px solid rgba(255,255,255,0.22);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    /* Hover & active states */
+    .button1:hover,
+    .button2:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .button1:active,
+    .button2:active {
+        transform: translateY(-1px);
+    }
+
+    /* If <p> is used inside buttons, ensure no extra margins */
+    .button1 p,
+    .button2 p {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+    }
+
+    /* Accessibility focus styles */
+    .button1:focus,
+    .button2:focus {
+        outline: 3px solid rgba(255,255,255,0.18);
+        outline-offset: 3px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .banner img { height: 420px; }
+        .banner-text { left: 30px; right: 30px; bottom: 30px; }
+        .banner-text .container { padding: 20px; }
+        .banner-title { font-size: 26px; }
+        .banner-description { font-size: 14px; }
+    }
+
+    @media (max-width: 768px) {
+        .banner img { height: 320px; filter: brightness(0.55); }
+        .banner-text { left: 20px; right: 20px; bottom: 20px; }
+        .banner-text .container {
+            padding: 16px;
+            border-radius: 10px;
+        }
+        .banner-title { font-size: 20px; }
+        .banner-description { font-size: 13px; margin-bottom: 12px; }
+
+        /* Stack buttons full width on small screens */
+        .button1,
+        .button2 {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
 
 /* General Styles */
 body {
@@ -213,7 +334,7 @@ body {
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -472,4 +593,16 @@ body {
         font-size: 14px;
         padding: 10px 8px;
     }
+
+    /* Banner text responsive tweaks */
+    .banner-text {
+        left: 20px;
+        right: 20px;
+        transform: none;
+        bottom: 20px;
+        padding: 15px;
+    }
+
+    .banner-title { font-size: 20px; }
+    .banner-description { font-size: 14px; }
 }
