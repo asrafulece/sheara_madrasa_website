@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sheara_madrasa_website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- header start -->
@@ -18,10 +20,7 @@
                 <a href="index.html"> Home</a>
                 <a href="about_us.html"> About us</a>
                 <a href="admission.html"> Admission</a>
-                <a href="all_department.html"> All Department</a>
-                <a href="all_pages.html"> All Pages</a>
-                <a href="events.html"> Events</a>
-                <a href="students_profile.html"> Students Profile</a>
+                <a href="programmes.html"> Programmes</a>
                 <a href="contact_us.html"> Contact us</a>
             </div>
         </div>
@@ -31,16 +30,26 @@
 
     <div class="banner">
         <img src="images/banner.jpg" alt="banner">
+        <div class="banner-text" role="region" aria-label="Affiliated organization">
+            <div class="container">
+                <h3 class="banner-title"> Sheara Nurani Talimul Quran Madrasa</h3>
+                <p class="banner-description">Sheara Nurani Talimul Quran Madrasa Committed to Qur'an memorization (Hifz), Tajwīd and Sunnah centred teaching. Registration Number: S-13111/2019.</p>
+                    
+                <a href="about_us.html" class="button1" aria-label="Know more about Sheara Madrasa">Know more</a>
+                
+                <a href="programmes.html" class="button2" aria-label="See all Programmes">All Programmes</a>
+            
+            </div>
+        </div>
     </div>
     <!-- banner end -->
 
-    <!-- content start -->
+<!--
     <div class="content">
-        <!-- About Section -->
         <section class="about-section">
-            <div class="container">
                 <h2 class="section-title">Welcome to Sheara Madrasa</h2>
                 <p class="section-subtitle">Providing Quality Islamic Education Since 1990</p>
+               
                 <div class="about-content">
                     <div class="about-text">
                         <p>Sheara Madrasa is a renowned Islamic educational institution dedicated to nurturing young minds with authentic Islamic knowledge and modern education. Our mission is to create well-rounded individuals who excel in both religious and worldly affairs.</p>
@@ -52,17 +61,94 @@
                             <div class="stat-label">Students</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">30+</div>
+                            <div class="stat-number">10+</div>
                             <div class="stat-label">Teachers</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">15+</div>
+                            <div class="stat-number">5+</div>
                             <div class="stat-label">Courses</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+-->
+
+<!--activities-section-->
+
+<section class="activities-section">
+    <div class="container">
+        <h2 class="section-title">Our Activities</h2>
+        <p class="section-subtitle">Engaging Students in Holistic Development</p>
+
+        <div class="activities-grid">
+
+            <!-- Activity 1 -->
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="images/fundraiser.jpg" alt="Fundraiser Event">
+                </div>
+
+                <div class="event-info">
+                    <div class="date">📅 March 15, 2024</div>
+                    <div class="time">⏰ 9:00 AM</div>
+                    
+                </div>
+
+                <h3>Annual Fundraising Dinner</h3>
+                <p>Join us for our annual Quran recitation and memorization competition. Open to all age groups with attractive prizes.</p>
+                <div class="location">📍 Main Hall, Sheara Madrasa</div>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="images/quran-competition.jpg" alt="Quran Recitation">
+                </div>
+
+                <div class="event-info">
+                    <div class="date">📅 April 10, 2024</div>
+                    <div class="time">⏰ 10:30 AM</div>
+                    
+                </div>
+
+                <h3>Annual Quran Competition</h3>
+                <p>Fostering a deep connection with the Quran through memorization and recitation.</p>
+                <div class="location">📍 Main Hall, Sheara Madrasa</div>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="images/ramadan.jpg" alt="Ramadan Special Programs">
+                </div> 
+
+                <div class="event-info">
+                    <div class="date">📅 During Ramadan</div>
+                    <div class="time">⏰ Iftar Time</div>
+                    
+                </div>
+
+                <h3>Ramadan Special Programs</h3>
+                <p>Special Taraweeh prayers, iftar arrangements, and educational programs throughout the blessed month</p>
+                <div class="location">📍 Madrasa Campus</div>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+
+        </div>
+
+        <!-- See more button -->
+        <div class="see-more">
+            <a href="programmes.html" class="see-more-btn">See More →</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!--activities-section-->
 
         <!-- Courses Section -->
         <section class="courses-section">
@@ -75,11 +161,7 @@
                         <h3>Quran Hifz</h3>
                         <p>Complete memorization of the Holy Quran with proper tajweed and recitation.</p>
                     </div>
-                    <div class="course-card">
-                        <div class="course-icon">📚</div>
-                        <h3>Islamic Studies</h3>
-                        <p>In-depth study of Fiqh, Hadith, Tafseer, and Islamic history.</p>
-                    </div>
+                   
                     <div class="course-card">
                         <div class="course-icon">🕌</div>
                         <h3>Arabic Language</h3>
@@ -88,7 +170,7 @@
                     <div class="course-card">
                         <div class="course-icon">✍️</div>
                         <h3>Modern Education</h3>
-                        <p>Mathematics, Science, English, and other contemporary subjects.</p>
+                        <p>Bangla, English, Mathematics, and other contemporary subjects.</p>
                     </div>
                 </div>
             </div>
@@ -131,17 +213,17 @@
                 <p class="section-subtitle">Get in Touch with Our Team</p>
                 <div class="contact-grid">
                     <div class="contact-card">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                         <h3>Address</h3>
-                        <p>Sheara, Dhaka<br>Bangladesh</p>
+                        <p>Sheara, Nolta, Satkhira, Khulna<br>Bangladesh</p>
                     </div>
                     <div class="contact-card">
-                        <div class="contact-icon">📞</div>
-                        <h3>Phone</h3>
-                        <p>+880 1234-567890<br>+880 9876-543210</p>
+                        <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <h3>Phone</h3> 
+                        <p>+880 1922-355969</p>
                     </div>
                     <div class="contact-card">
-                        <div class="contact-icon">📧</div>
+                        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                         <h3>Email</h3>
                         <p>info@shearamadrasa.edu<br>admission@shearamadrasa.edu</p>
                     </div>
@@ -157,21 +239,21 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h4>About Sheara Madrasa</h4>
-                    <p>Dedicated to providing quality Islamic education and building a strong foundation for our students' future.</p>
+                    <p>Dedicated to providing quality Islamic education and building a strong foundation for our student's future.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Admission</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <!-- All Department link removed per request -->
+                        <li><a href="admission.html">Admission</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
-                    <p>Sheara, Dhaka, Bangladesh</p>
-                    <p>Phone: +880 1234-567890</p>
+                    <p>Sheara, Nolta, Satkhira, Khulna</p>
+                    <p>Phone: +880 1922-355969</p>
                     <p>Email: info@shearamadrasa.edu</p>
                 </div>
             </div>
