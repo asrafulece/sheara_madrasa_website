@@ -25,26 +25,28 @@
     /* Smooth fade-in animation */
     animation: fadeIn 0.8s ease-in-out;
 
-    .top-header-left {
-        flex: 1;
-        text-align: left;
+.top-header-left {
+    flex: 1;
+    text-align: left;
+}
 
-        .fas fa-phone-alt,
-        .fas fa-envelope,
-        .fas fa-map-marker-alt {
-            margin-right: 8px;
-            color: #3498db;
-        }
-    }
+.top-header-left .fa-phone-alt,
+.top-header-left .fa-envelope,
+.top-header-left .fa-map-marker-alt {
+    margin-right: 8px;
+    color: #3498db;
+    margin-left: 20px; /* spacing between icons */
+}
 
     .top-header-right {
         flex: 1;
         text-align: right;
+
         
         a {         
             color: #ffffff;
             text-decoration: none;
-            margin-left: 15px;
+            margin-left: 45px;
             transition: color 0.3s;
             &:hover {
                 color: #3498db;
@@ -52,14 +54,14 @@
             .whatsapp{
                 color: #25D366;
                 .fab fa-whatsapp {
-                    margin-right: 8px;
+                    margin-right: 35px;
                 }   
             }
         }
         a{
             color: #ffffff;
             text-decoration: none;
-            margin-left: 15px;
+            margin-left: 45px;
             transition: color 0.3s;
             &:hover {
                 color: #3498db;
@@ -74,7 +76,7 @@
         a{
             color: #ffffff;
             text-decoration: none;
-            margin-left: 15px;
+            margin-left: 45px;
             transition: color 0.3s;
             &:hover {
                 color: #3498db;
